@@ -1,0 +1,1 @@
+require("andromeda.plugins.telescope")

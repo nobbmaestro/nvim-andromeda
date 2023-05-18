@@ -46,7 +46,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 ## Supported plugins (as of right now)
 
-- Tbd
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 
 ## Customization
 
