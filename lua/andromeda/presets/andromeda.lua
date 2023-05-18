@@ -3,11 +3,11 @@ return {
 	mono_1 = "#2f323c",
 	mono_2 = "#3a3e4b",
 	mono_3 = "#464959",
-    mono_4 = "#a0a1a7",
-    mono_5 = "#d5ced9",
+	mono_4 = "#a0a1a7",
+	mono_5 = "#d5ced9",
 
-	primary = "#00e8c6",    -- cyan
-	secondary = "#ff00aa",  -- pink
+	primary = "#00e8c6", -- cyan
+	secondary = "#ff00aa", -- pink
 
 	cyan = "#00e8c6", -- primary
 	pink = "#ff00aa", -- secondary

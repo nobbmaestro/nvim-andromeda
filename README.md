@@ -2,16 +2,29 @@
 
 Oh, are you also searching for neovim port of [Andromeda](https://github.com/EliverLara/Andromeda/tree/master)? Well, look no further!
 
-![](https://media.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif)
+<p align="center">
+  <img src="https://media.giphy.com/media/sp685iuIEGuys/giphy.gif" alt="cheers.gif"/>
+</p>
+
+## Description
 
 True neovim-adaption of [Andromeda](https://github.com/EliverLara/Andromeda/tree/master) for VSCode!
 
 Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [colorbuddy.nvim](https://github.com/tjdevries/colorbuddy.nvim), with my personal touch on [Andromeda](https://github.com/EliverLara/Andromeda/tree/master).
 
-![](media/example-py.png)
+![media/example-py.png](media/example-py.png)
+
+[![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
+[![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda)](github-last-commit)
+[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.1.0)](githut-commits-since)
+
+## Table of Content
 
 - [Installation](#installation)
 - [Supported plugins](#supported-plugins-as-of-right-now)
+- [Customization](#customization)
+  - [Customizing background(s)](#customizing-backgrounds)
+  - [Customizing accent color(s)](#customizing-accent-colors)
 - [Thank You](#thank-you)
 
 ## Installation
@@ -51,7 +64,39 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 ## Customization
 
-To be developed...
+Currently supported customizations are listed below.
+
+### Customizing background(s)
+
+To change the background and/or highlighting, override following variables in the configuration:
+
+```lua
+require("andromeda").setup({
+    preset = "andromeda",
+    colors = {
+        background = "#24262e"
+        mono_1     = "#2f323c", -- secondary background and/or highlighting 
+        mono_2     = "#3a3e4b", -- used for highlighting 
+        mono_3     = "#464959", -- used for highlighting 
+        mono_4     = "#a0a1a7", -- comments 
+        mono_5     = "#d5ced9", -- normal text
+    }
+})
+```
+
+### Customizing accent color(s)
+
+As of right now, I have selected the `primary` as the most dominant accent color. Whereas the usage of `secondary` color is almost non-existent. Regardless, these can be overriden, accordingly:
+
+```lua
+require("andromeda").setup({
+ preset = "andromeda",
+    colors = {
+        primary   = "#00e8c6", -- defaults to cyan
+        secondary = "#ff00aa", -- defualts to pink
+    },
+})
+```
 
 ## Thank You
 
