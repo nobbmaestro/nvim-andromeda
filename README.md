@@ -16,7 +16,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 [![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
 [![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda)](github-last-commit)
-[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.0.1)](githut-commits-since)
+[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.1.0)](githut-commits-since)
 
 ## Table of Content
 
