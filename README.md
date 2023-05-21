@@ -16,7 +16,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 [![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
 [![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda)](github-last-commit)
-[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.1.0)](githut-commits-since)
+[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/0.1.0)](githut-commits-since)
 
 ## Table of Content
 
@@ -25,6 +25,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 - [Customization](#customization)
   - [Customizing background(s)](#customizing-backgrounds)
   - [Customizing accent color(s)](#customizing-accent-colors)
+  - [Customazing font style(s)](#customizing-font-styles)
 - [Thank You](#thank-you)
 
 ## Installation
@@ -95,6 +96,19 @@ require("andromeda").setup({
         primary   = "#00e8c6", -- defaults to cyan
         secondary = "#ff00aa", -- defualts to pink
     },
+})
+```
+
+### Customizing font style(s)
+
+In order to enable "Andromeda Italic", add following to the configuration:
+
+```lua
+require("andromeda").setup({
+    preset = "andromeda",
+    styles = {
+        italic = true,
+    }
 })
 ```
 
