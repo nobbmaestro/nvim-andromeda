@@ -38,7 +38,7 @@ function M.setup(opts)
 	Group.new("Visual", nil, colors.mono_2)
 	Group.new("SignColumn", nil, colors.nb_background)
 	Group.new("LineNr", colors.mono_3, colors.nb_background)
-	Group.new("EndOfBuffer", colors.blue, nil)
+	Group.new("EndOfBuffer", colors.mono_3, nil)
 
 	Group.new("Comment", colors.mono_4, nil, sumStyles({ s.italic }))
 	Group.new("Constant", colors.pink)
