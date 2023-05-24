@@ -63,6 +63,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [vim-signify](https://github.com/mhinz/vim-signify)
 
 ## Customization
 
