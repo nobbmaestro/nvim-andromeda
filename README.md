@@ -64,6 +64,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-signify](https://github.com/mhinz/vim-signify)
+- [fugitive.vim](https://github.com/tpope/vim-fugitive)
 
 ## Customization
 
