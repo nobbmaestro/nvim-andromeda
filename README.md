@@ -65,6 +65,22 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [fugitive.vim](https://github.com/tpope/vim-fugitive)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+
+Note, in order to set up lualine, one has to modify lualine config accordingly:
+
+```lua
+local andromeda_lualine = require("andromeda.plugins.lualine")
+
+require("lualine").setup({
+	options = {
+		theme = andromeda_lualine.theme,
+    },
+	sections = andromeda_lualine.sections,
+	inactive_sections = andromeda_lualine.inactive_sections,
+})
+
+```
 
 ## Customization
 
