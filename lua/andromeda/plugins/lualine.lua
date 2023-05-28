@@ -66,24 +66,24 @@ local c = require("andromeda.colors").all()
 
 M.theme = {
 	normal = {
+		a = { fg = c.background, bg = c.mono_4, gui = "bold" },
+		b = { fg = c.mono_4, bg = c.mono_1 },
+		c = { fg = c.mono_4, bg = c.mono_1 },
+	},
+	insert = {
 		a = { fg = c.background, bg = c.primary, gui = "bold" },
 		b = { fg = c.primary, bg = c.mono_1 },
 		c = { fg = c.primary, bg = c.mono_1 },
 	},
-	insert = {
+	visual = {
 		a = { fg = c.background, bg = c.secondary, gui = "bold" },
 		b = { fg = c.secondary, bg = c.mono_1 },
 		c = { fg = c.secondary, bg = c.mono_1 },
 	},
-	visual = {
-		a = { fg = c.background, bg = c.purple, gui = "bold" },
-		b = { fg = c.purple, bg = c.mono_1 },
-		c = { fg = c.purple, bg = c.mono_1 },
-	},
 	replace = {
-		a = { fg = c.background, bg = c.green, gui = "bold" },
-		b = { fg = c.green, bg = c.mono_1 },
-		c = { fg = c.green, bg = c.mono_1 },
+		a = { fg = c.background, bg = c.orange, gui = "bold" },
+		b = { fg = c.orange, bg = c.mono_1 },
+		c = { fg = c.orange, bg = c.mono_1 },
 	},
 	inactive = {
 		a = { fg = c.mono_1, bg = c.background },
