@@ -15,8 +15,8 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 ![media/example-py.png](media/example-py.png)
 
 [![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
-[![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda)](github-last-commit)
-[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.1.0)](githut-commits-since)
+[![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda/development)](github-last-commit)
+[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/0.2.0/development)](githut-commits-since)
 
 ## Table of Content
 
@@ -25,6 +25,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 - [Customization](#customization)
   - [Customizing background(s)](#customizing-backgrounds)
   - [Customizing accent color(s)](#customizing-accent-colors)
+  - [Customazing font style(s)](#customizing-font-styles)
 - [Thank You](#thank-you)
 
 ## Installation
@@ -61,6 +62,25 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [vim-signify](https://github.com/mhinz/vim-signify)
+- [fugitive.vim](https://github.com/tpope/vim-fugitive)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+
+Note, in order to set up lualine, one has to modify lualine config accordingly:
+
+```lua
+local andromeda_lualine = require("andromeda.plugins.lualine")
+
+require("lualine").setup({
+ options = {
+  theme = andromeda_lualine.theme,
+    },
+ sections = andromeda_lualine.sections,
+ inactive_sections = andromeda_lualine.inactive_sections,
+})
+
+```
 
 ## Customization
 
@@ -74,7 +94,7 @@ To change the background and/or highlighting, override following variables in th
 require("andromeda").setup({
     preset = "andromeda",
     colors = {
-        background = "#24262e"
+        background = "#23262e"
         mono_1     = "#2f323c", -- secondary background and/or highlighting 
         mono_2     = "#3a3e4b", -- used for highlighting 
         mono_3     = "#464959", -- used for highlighting 
@@ -95,6 +115,19 @@ require("andromeda").setup({
         primary   = "#00e8c6", -- defaults to cyan
         secondary = "#ff00aa", -- defualts to pink
     },
+})
+```
+
+### Customizing font style(s)
+
+In order to enable "Andromeda Italic", add following to the configuration:
+
+```lua
+require("andromeda").setup({
+    preset = "andromeda",
+    styles = {
+        italic = true,
+    }
 })
 ```
 

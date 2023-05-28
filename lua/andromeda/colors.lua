@@ -56,7 +56,7 @@ function M.setup(opts)
 	Color.new("mono_4", getConfiguredColor("mono_4"))
 	Color.new("mono_5", getConfiguredColor("mono_5"))
 
-    -- Set up andromeda preset
+	-- Set up andromeda preset
 	Color.new("cyan", getConfiguredColor("cyan"))
 	Color.new("orange", getConfiguredColor("orange"))
 	Color.new("yellow", getConfiguredColor("yellow"))
