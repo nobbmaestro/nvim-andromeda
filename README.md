@@ -15,8 +15,8 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 ![media/example-py.png](media/example-py.png)
 
 [![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
-[![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda)](github-last-commit)
-[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/0.1.0)](githut-commits-since)
+[![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda/development)](github-last-commit)
+[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/0.1.0/development)](githut-commits-since)
 
 ## Table of Content
 
@@ -73,11 +73,11 @@ Note, in order to set up lualine, one has to modify lualine config accordingly:
 local andromeda_lualine = require("andromeda.plugins.lualine")
 
 require("lualine").setup({
-	options = {
-		theme = andromeda_lualine.theme,
+ options = {
+  theme = andromeda_lualine.theme,
     },
-	sections = andromeda_lualine.sections,
-	inactive_sections = andromeda_lualine.inactive_sections,
+ sections = andromeda_lualine.sections,
+ inactive_sections = andromeda_lualine.inactive_sections,
 })
 
 ```
