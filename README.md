@@ -94,7 +94,7 @@ To change the background and/or highlighting, override following variables in th
 require("andromeda").setup({
     preset = "andromeda",
     colors = {
-        background = "#23262e"
+        background = "#23262e",
         mono_1     = "#2f323c", -- secondary background and/or highlighting 
         mono_2     = "#3a3e4b", -- used for highlighting 
         mono_3     = "#464959", -- used for highlighting 
@@ -103,7 +103,13 @@ require("andromeda").setup({
     }
 })
 ```
-
+For transparent background, set following flag:
+```lua
+require("andromeda").setup({
+    preset = "andromeda",
+    transparent_bg = true,
+})
+```
 ### Customizing accent color(s)
 
 As of right now, I have selected the `primary` as the most dominant accent color. Whereas the usage of `secondary` color is almost non-existent. Regardless, these can be overriden, accordingly:
