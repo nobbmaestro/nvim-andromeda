@@ -24,6 +24,10 @@ end
 function M.setup(opts)
 	local preset = M.getPreset(opts.preset or "andromeda")
 
+	local getTransparencyFlag = function()
+		return opts.transparent_bg
+	end
+
 	local getConfiguredColor = function(color)
 		return opts.colors and opts.colors[color] or preset[color]
 	end
@@ -31,7 +35,13 @@ function M.setup(opts)
 	-- Set up background color
 	-- Can be configured by preset or end user
 	-- TODO: This will eventually change to `background` when we PR a fix to colorbuddy (since `background` is currently reserved)
-	Color.new("nb_background", getConfiguredColor("background"))
+    Color.new("nb_background", getConfiguredColor("background"))
+
+    -- Set up transparent background
+    -- If transparency flag is set by the user, override the background color
+    if getTransparencyFlag() then
+        colors.nb_background = colors.none
+    end
 
 	-- Set up primary and secondary flavor colors
 	-- Can be configured by preset or end user
