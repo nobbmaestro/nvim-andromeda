@@ -7,7 +7,7 @@ local colors = cb.colors
 -- https://github.com/williamboman/mason.nvim/blob/main/lua/mason/ui/colors.lua
 
 -- general
-Group.new("MasonNormal", colors.white, colors.mono_1)
+Group.new("MasonNormal", colors.mono_5, colors.mono_1)
 
 Group.new("MasonHeader", colors.primary, colors.mono_1)
 Group.new("MasonHeaderSecondary", colors.secondary)
