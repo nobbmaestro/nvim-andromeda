@@ -66,6 +66,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [fugitive.vim](https://github.com/tpope/vim-fugitive)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [flash.nvim](https://github.com/folke/flash.nvim/tree/8a8e74922a383c253b7f92e042b749150140c8d1)
 
 Note, in order to set up lualine, one has to modify lualine config accordingly:
 
