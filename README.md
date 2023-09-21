@@ -16,7 +16,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 [![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
 [![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda/development)](github-last-commit)
-[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/0.2.1/development)](githut-commits-since)
+[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/0.3.0/development)](githut-commits-since)
 
 ## Table of Content
 
@@ -66,6 +66,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [fugitive.vim](https://github.com/tpope/vim-fugitive)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [flash.nvim](https://github.com/folke/flash.nvim/tree/8a8e74922a383c253b7f92e042b749150140c8d1)
 
 Note, in order to set up lualine, one has to modify lualine config accordingly:
 
