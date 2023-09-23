@@ -54,6 +54,7 @@ function M.setup(opts)
 	Group.new("Function", colors.yellow)
 	Group.new("Number", colors.orange)
 	Group.new("Float", colors.orange)
+    Group.new("Label", colors.mono_3)
 
 	Group.new("ColorColumn", nil, colors.mono_1)
 	Group.new("Conceal", colors.mono_4)
