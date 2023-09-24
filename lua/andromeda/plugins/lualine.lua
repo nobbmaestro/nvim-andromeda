@@ -1,8 +1,6 @@
-local cb = require("colorbuddy")
-
-local Group = cb.Group
-local groups = cb.groups
-local colors = cb.colors
+local Group = require("colorbuddy").Group
+local groups = require("colorbuddy").groups
+local colors = require("colorbuddy").colors
 
 Group.link("lualine_b_diff_added_normal", groups.DiffAdd)
 Group.link("lualine_b_diff_added_insert", groups.DiffAdd)
@@ -65,49 +63,49 @@ local M = {}
 local c = require("andromeda.colors").all()
 
 M.theme = {
-	normal = {
-		a = { fg = c.background, bg = c.mono_4, gui = "bold" },
-		b = { fg = c.mono_4, bg = c.mono_1 },
-		c = { fg = c.mono_4, bg = c.mono_1 },
-	},
-	insert = {
-		a = { fg = c.background, bg = c.primary, gui = "bold" },
-		b = { fg = c.primary, bg = c.mono_1 },
-		c = { fg = c.primary, bg = c.mono_1 },
-	},
-	visual = {
-		a = { fg = c.background, bg = c.secondary, gui = "bold" },
-		b = { fg = c.secondary, bg = c.mono_1 },
-		c = { fg = c.secondary, bg = c.mono_1 },
-	},
-	replace = {
-		a = { fg = c.background, bg = c.orange, gui = "bold" },
-		b = { fg = c.orange, bg = c.mono_1 },
-		c = { fg = c.orange, bg = c.mono_1 },
-	},
-	inactive = {
-		a = { fg = c.mono_1, bg = c.background },
-		b = { fg = c.mono_1, bg = c.background },
-		c = { fg = c.mono_1, bg = c.background },
-	},
+    normal = {
+        a = { fg = c.background, bg = c.mono_4, gui = "bold" },
+        b = { fg = c.mono_4, bg = c.mono_1 },
+        c = { fg = c.mono_4, bg = c.mono_1 },
+    },
+    insert = {
+        a = { fg = c.background, bg = c.primary, gui = "bold" },
+        b = { fg = c.primary, bg = c.mono_1 },
+        c = { fg = c.primary, bg = c.mono_1 },
+    },
+    visual = {
+        a = { fg = c.background, bg = c.secondary, gui = "bold" },
+        b = { fg = c.secondary, bg = c.mono_1 },
+        c = { fg = c.secondary, bg = c.mono_1 },
+    },
+    replace = {
+        a = { fg = c.background, bg = c.orange, gui = "bold" },
+        b = { fg = c.orange, bg = c.mono_1 },
+        c = { fg = c.orange, bg = c.mono_1 },
+    },
+    inactive = {
+        a = { fg = c.mono_1, bg = c.background },
+        b = { fg = c.mono_1, bg = c.background },
+        c = { fg = c.mono_1, bg = c.background },
+    },
 }
 
 M.sections = {
-	lualine_a = { "mode" },
-	lualine_b = { "branch", "diff", { "diagnostics", color = { bg = c.background } } },
-	lualine_c = { "filename" },
-	lualine_x = { "encoding", { "filetype", colored = false } },
-	lualine_y = { "progress" },
-	lualine_z = { "location" },
+    lualine_a = { "mode" },
+    lualine_b = { "branch", "diff", { "diagnostics", color = { bg = c.background } } },
+    lualine_c = { "filename" },
+    lualine_x = { "encoding", { "filetype", colored = false } },
+    lualine_y = { "progress" },
+    lualine_z = { "location" },
 }
 
 M.inactive_sections = {
-	lualine_a = {},
-	lualine_b = {},
-	lualine_c = { "filename" },
-	lualine_x = { "location" },
-	lualine_y = {},
-	lualine_z = {},
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = { "filename" },
+    lualine_x = { "location" },
+    lualine_y = {},
+    lualine_z = {},
 }
 
 return M
