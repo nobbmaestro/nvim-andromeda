@@ -93,6 +93,7 @@ function M.setup(opts)
 	Group.new("VisualNOS", colors.pink, colors.mono_2)
 	Group.new("WarningMsg", colors.pink)
 	Group.new("WildMenu", colors.mono_4, colors.mono_2)
+    Group.new("GitBlameMsg", colors.mono_4, colors.mono_1, sumStyles({ s.italic }))
 
 	-- Treesitter Syntax Highlighting
 	-- See :help treesitter-highlight-groups
