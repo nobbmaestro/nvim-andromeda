@@ -64,48 +64,58 @@ local c = require("andromeda.colors").all()
 
 M.theme = {
     normal = {
-        a = { fg = c.background, bg = c.mono_4, gui = "bold" },
+        a = { fg = c.background, bg = c.blue, gui = "bold" },
         b = { fg = c.mono_4, bg = c.mono_1 },
-        c = { fg = c.mono_4, bg = c.mono_1 },
+        c = { fg = c.mono_4, bg = c.mono_2 },
+        x = { fg = c.mono_4, bg = c.mono_2 },
+        y = { fg = c.mono_4, bg = c.mono_2 },
+        z = { fg = c.mono_5, bg = c.mono_2 },
     },
     insert = {
-        a = { fg = c.background, bg = c.primary, gui = "bold" },
-        b = { fg = c.primary, bg = c.mono_1 },
-        c = { fg = c.primary, bg = c.mono_1 },
+        a = { fg = c.background, bg = c.cyan, gui = "bold" },
+        b = { fg = c.mono_4, bg = c.mono_1 },
+        c = { fg = c.mono_4, bg = c.mono_2 },
+        x = { fg = c.mono_4, bg = c.mono_2 },
+        y = { fg = c.mono_4, bg = c.mono_2 },
+        z = { fg = c.mono_5, bg = c.mono_2 },
     },
     visual = {
-        a = { fg = c.background, bg = c.secondary, gui = "bold" },
-        b = { fg = c.secondary, bg = c.mono_1 },
-        c = { fg = c.secondary, bg = c.mono_1 },
+        a = { fg = c.background, bg = c.green, gui = "bold" },
+        b = { fg = c.mono_4, bg = c.mono_1 },
+        c = { fg = c.mono_4, bg = c.mono_2 },
+        x = { fg = c.mono_4, bg = c.mono_2 },
+        y = { fg = c.mono_4, bg = c.mono_2 },
+        z = { fg = c.mono_5, bg = c.mono_2 },
     },
     replace = {
         a = { fg = c.background, bg = c.orange, gui = "bold" },
-        b = { fg = c.orange, bg = c.mono_1 },
-        c = { fg = c.orange, bg = c.mono_1 },
+        b = { fg = c.mono_4, bg = c.mono_1 },
+        c = { fg = c.mono_4, bg = c.mono_2 },
+        x = { fg = c.mono_4, bg = c.mono_2 },
+        y = { fg = c.mono_4, bg = c.mono_2 },
+        z = { fg = c.mono_5, bg = c.mono_2 },
+    },
+    command = {
+        a = { fg = c.background, bg = c.hot_pink, gui = "bold" },
+        b = { fg = c.mono_4, bg = c.mono_1 },
+        c = { fg = c.mono_4, bg = c.mono_2 },
+        x = { fg = c.mono_4, bg = c.mono_2 },
+        y = { fg = c.mono_4, bg = c.mono_2 },
+        z = { fg = c.mono_5, bg = c.mono_2 },
+    },
+    terminal = {
+        a = { fg = c.background, bg = c.hot_pink, gui = "bold" },
+        b = { fg = c.mono_4, bg = c.mono_1 },
+        c = { fg = c.mono_4, bg = c.mono_2 },
+        x = { fg = c.mono_4, bg = c.mono_2 },
+        y = { fg = c.mono_4, bg = c.mono_2 },
+        z = { fg = c.hot_pink, bg = c.mono_2 },
     },
     inactive = {
         a = { fg = c.mono_1, bg = c.background },
         b = { fg = c.mono_1, bg = c.background },
         c = { fg = c.mono_1, bg = c.background },
     },
-}
-
-M.sections = {
-    lualine_a = { "mode" },
-    lualine_b = { "branch", "diff", { "diagnostics", color = { bg = c.background } } },
-    lualine_c = { "filename" },
-    lualine_x = { "encoding", { "filetype", colored = false } },
-    lualine_y = { "progress" },
-    lualine_z = { "location" },
-}
-
-M.inactive_sections = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = { "filename" },
-    lualine_x = { "location" },
-    lualine_y = {},
-    lualine_z = {},
 }
 
 return M
