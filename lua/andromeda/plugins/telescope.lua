@@ -1,8 +1,9 @@
 local Group = require("colorbuddy").Group
-local colors = require("colorbuddy").colors
+local c = require("colorbuddy").colors
+local g = require("colorbuddy").groups
 
-Group.new("TelescopeBorder", colors.mono_3)
-Group.new("TelescopeMatching", colors.primary)
-Group.new("TelescopePromptCounter", colors.primary, nil)
-Group.new("TelescopeResultsNormal", colors.mono_5)
-Group.new("TelescopeTitle", colors.primary)
+Group.link("TelescopeBorder", g.FloatBorder)
+Group.link("TelescopeMatching", g.Title)
+Group.link("TelescopeTitle", g.Title)
+Group.new("TelescopePromptCounter", c.mono_3, nil)
+Group.new("TelescopeResultsNormal", c.mono_4, nil)

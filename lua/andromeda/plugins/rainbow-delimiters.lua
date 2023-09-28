@@ -1,10 +1,10 @@
 local Group = require("colorbuddy").Group
-local colors = require("colorbuddy").colors
+local c = require("colorbuddy").colors
 
-Group.new("RainbowDelimiterBlue", colors.blue)
-Group.new("RainbowDelimiterCyan", colors.cyan)
-Group.new("RainbowDelimiterGreen", colors.green)
-Group.new("RainbowDelimiterOrange", colors.orange)
-Group.new("RainbowDelimiterRed", colors.red)
-Group.new("RainbowDelimiterViolet", colors.purple)
-Group.new("RainbowDelimiterYellow", colors.yellow)
+Group.new("RainbowDelimiterBlue", c.blue)
+Group.new("RainbowDelimiterCyan", c.cyan)
+Group.new("RainbowDelimiterGreen", c.green)
+Group.new("RainbowDelimiterOrange", c.orange)
+Group.new("RainbowDelimiterRed", c.red)
+Group.new("RainbowDelimiterViolet", c.purple)
+Group.new("RainbowDelimiterYellow", c.yellow)

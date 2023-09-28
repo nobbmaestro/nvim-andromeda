@@ -1,5 +1,5 @@
 local Group = require("colorbuddy").Group
-local colors = require("colorbuddy").colors
+local g = require("colorbuddy").groups
 
-Group.new("HarpoonBorder", colors.mono_3, nil)
-Group.new("HarpoonWindow", colors.primary, nil)
+Group.link("HarpoonBorder", g.FloatBorder)
+Group.new("HarpoonWindow", g.Title)
