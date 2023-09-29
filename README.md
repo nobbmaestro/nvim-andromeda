@@ -12,7 +12,7 @@ True neovim-adaption of [Andromeda](https://github.com/EliverLara/Andromeda/tree
 
 Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [colorbuddy.nvim](https://github.com/tjdevries/colorbuddy.nvim), with my personal touch on [Andromeda](https://github.com/EliverLara/Andromeda/tree/master).
 
-![media/example-py.png](media/example-py.png)
+![media/demo.png](media/demo.png)
 
 [![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
 [![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda/development)](github-last-commit)
@@ -32,41 +32,44 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 1. Install using your favourite package manager:
 
-    > ***Note:** You'll need to use colorbuddy's `dev` branch for now, but that'll change to `master` in time...*
+   > **\*Note:** You'll need to use colorbuddy's `dev` branch for now, but that'll change to `master` in time...\*
 
-    **Using [packer.nvim](https://github.com/wbthomason/packer.nvim):**
+   **Using [packer.nvim](https://github.com/wbthomason/packer.nvim):**
 
-    ```lua
-    use {
-      "nobbmaestro/nvim-andromeda",
-      requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
-    }
-    ```
+   ```lua
+   use {
+     "nobbmaestro/nvim-andromeda",
+     requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
+   }
+   ```
 
-    **Using [vim-plug](https://github.com/junegunn/vim-plug):**
+   **Using [vim-plug](https://github.com/junegunn/vim-plug):**
 
-    ```vim
-    Plug 'tjdevries/colorbuddy.nvim', { 'branch': 'dev' }
-    Plug 'nobbmaestro/nvim-andromeda'
-    ```
+   ```vim
+   Plug 'tjdevries/colorbuddy.nvim', { 'branch': 'dev' }
+   Plug 'nobbmaestro/nvim-andromeda'
+   ```
 
 2. Enable the colorscheme in your lua config:
 
-    ```lua
-    require("andromeda").setup()
-    ```
+   ```lua
+   require("andromeda").setup()
+   ```
 
 3. Stop procrastinating and go back to coding!
 
 ## Supported plugins (as of right now)
 
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [flash.nvim](https://github.com/folke/flash.nvim/tree/8a8e74922a383c253b7f92e042b749150140c8d1)
+- [fugitive.vim](https://github.com/tpope/vim-fugitive)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [mason.nvim](https://github.com/williamboman/mason.nvim)
+- [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [vim-signify](https://github.com/mhinz/vim-signify)
-- [fugitive.vim](https://github.com/tpope/vim-fugitive)
-- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [flash.nvim](https://github.com/folke/flash.nvim/tree/8a8e74922a383c253b7f92e042b749150140c8d1)
 
 Note, in order to set up lualine, one has to modify lualine config accordingly:
 
@@ -74,11 +77,11 @@ Note, in order to set up lualine, one has to modify lualine config accordingly:
 local andromeda_lualine = require("andromeda.plugins.lualine")
 
 require("lualine").setup({
- options = {
-  theme = andromeda_lualine.theme,
+    options = {
+        theme = andromeda_lualine.theme,
     },
- sections = andromeda_lualine.sections,
- inactive_sections = andromeda_lualine.inactive_sections,
+    sections = andromeda_lualine.sections,
+    inactive_sections = andromeda_lualine.inactive_sections,
 })
 
 ```
@@ -96,28 +99,31 @@ require("andromeda").setup({
     preset = "andromeda",
     colors = {
         background = "#23262e",
-        mono_1     = "#2f323c", -- secondary background and/or highlighting 
-        mono_2     = "#3a3e4b", -- used for highlighting 
-        mono_3     = "#464959", -- used for highlighting 
-        mono_4     = "#a0a1a7", -- comments 
+        mono_1     = "#2f323c", -- secondary background and/or highlighting
+        mono_2     = "#3a3e4b", -- used for highlighting
+        mono_3     = "#464959", -- used for highlighting
+        mono_4     = "#a0a1a7", -- comments
         mono_5     = "#d5ced9", -- normal text
     }
 })
 ```
+
 For transparent background, set following flag:
+
 ```lua
 require("andromeda").setup({
     preset = "andromeda",
     transparent_bg = true,
 })
 ```
+
 ### Customizing accent color(s)
 
 As of right now, I have selected the `primary` as the most dominant accent color. Whereas the usage of `secondary` color is almost non-existent. Regardless, these can be overriden, accordingly:
 
 ```lua
 require("andromeda").setup({
- preset = "andromeda",
+    preset = "andromeda",
     colors = {
         primary   = "#00e8c6", -- defaults to cyan
         secondary = "#ff00aa", -- defualts to pink
