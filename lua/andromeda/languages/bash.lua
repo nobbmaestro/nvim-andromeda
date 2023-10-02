@@ -1,6 +1,6 @@
 local Group = require("colorbuddy").Group
-local colors = require("colorbuddy").colors
+local c = require("colorbuddy").colors
 
-Group.new("@constant.bash", colors.cyan)
-Group.new("@parameter.bash", colors.red)
-Group.new("@string.bash", colors.green)
+Group.new("@constant.bash", c.cyan)
+Group.new("@parameter.bash", c.red)
+Group.new("@string.bash", c.green)

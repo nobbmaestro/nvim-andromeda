@@ -1,8 +1,8 @@
 local Group = require("colorbuddy").Group
-local colors = require("colorbuddy").colors
+local c = require("colorbuddy").colors
 
-Group.new("@type.builtin.c", colors.purple)
-Group.new("@type.definition.c", colors.yellow)
-Group.new("@type.qualifier.c", colors.yellow)
-Group.new("@variable.builtin.c", colors.yellow)
+Group.new("@type.builtin.c", c.purple)
+Group.new("@type.definition.c", c.yellow)
+Group.new("@type.qualifier.c", c.yellow)
+Group.new("@variable.builtin.c", c.yellow)
 

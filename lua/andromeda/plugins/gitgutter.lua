@@ -1,6 +1,6 @@
 local Group = require("colorbuddy").Group
-local groups = require("colorbuddy").groups
+local g = require("colorbuddy").groups
 
-Group.link("GitGutterAdd", groups.DiffAdd)
-Group.link("GitGutterChange", groups.DiffChange)
-Group.link("GitGutterDelete", groups.DiffDelete)
+Group.link("GitGutterAdd", g.DiffAdd)
+Group.link("GitGutterChange", g.DiffChange)
+Group.link("GitGutterDelete", g.DiffDelete)
