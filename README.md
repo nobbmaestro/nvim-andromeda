@@ -1,4 +1,4 @@
-# Andromeda
+# Andromeda Theme for Neovim
 
 Oh, are you also searching for neovim port of [Andromeda](https://github.com/EliverLara/Andromeda/tree/master)? Well, look no further!
 
