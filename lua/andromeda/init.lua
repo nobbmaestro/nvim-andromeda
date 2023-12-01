@@ -9,8 +9,8 @@ function M.setup(opts)
 
 	require("andromeda.colors").setup(opts)
 	require("andromeda.theme").setup(opts)
-	require("andromeda.plugins")
-	require("andromeda.languages")
+	require("andromeda.plugins").setup(opts)
+	require("andromeda.languages").setup(opts)
 end
 
 return M

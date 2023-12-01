@@ -1,27 +1,7 @@
 local Group = require("colorbuddy").Group
-local styles = require("colorbuddy").styles
 
-local parseStyleOpts = function(opts)
-	return {
-		it = vim.tbl_get(opts, "styles", "italic") and styles.italic or styles.NONE,
-		bo = vim.tbl_get(opts, "styles", "bold") and styles.bold or styles.NONE,
-		ul = vim.tbl_get(opts, "styles", "underline") and styles.underline or styles.NONE,
-		uc = vim.tbl_get(opts, "styles", "undercurl") and styles.undercurl or styles.NONE,
-	}
-end
-
--- We need this function because we can't do styles.NONE + styles.NONE (we need to ensure it's only added once)
-local sumStyles = function(values)
-	local sum = styles.NONE
-
-	for _, value in ipairs(values) do
-		if value ~= styles.NONE then
-			sum = sum + value
-		end
-	end
-
-	return sum
-end
+local sumStyles = require("andromeda.utils").sumStyles
+local parseStyleOpts = require("andromeda.utils").parseStyleOpts
 
 local M = {}
 
@@ -35,7 +15,7 @@ function M.setup(opts)
 	-- Vim Editor
 	Group.new("Normal", c.mono_5, c.nb_background)
 	Group.new("InvNormal", c.mono_2, c.nb_background)
-	Group.new("NormalFloat", c.mono_4, c.mono_1)
+	Group.new("NormalFloat", c.mono_5)
 	Group.new("FloatBorder", c.mono_3)
 
 	Group.new("LineNr", c.mono_3, c.nb_background)
@@ -60,14 +40,14 @@ function M.setup(opts)
 	Group.new("Search", c.mono_1, c.blue)
 	Group.new("IncSearch", c.mono_1, c.orange)
 
-	Group.new("Visual", nil, c.mono_2)
+	Group.new("Visual", nil, c.mono_1)
 	Group.new("VisualMode", g.Visual, g.Visual)
 	Group.new("VisualLineMode", g.Visual, g.Visual)
 
 	-- Popup Menu
 	Group.new("Title", c.primary)
-	Group.new("Pmenu", c.mono_4, c.mono_1)
-	Group.new("PmenuSel", c.primary, c.mono_1)
+	Group.new("Pmenu", c.mono_5, c.mono_1)
+	Group.new("PmenuSel", c.primary, c.mono_2)
 	Group.new("PmenuSbar", nil, c.mono_1)
 	Group.new("PmenuThumb", nil, c.mono_2)
 
@@ -91,12 +71,12 @@ function M.setup(opts)
 	Group.new("Function", c.yellow)
 	Group.new("Identifier", c.cyan)
 	Group.new("Label", c.mono_3)
-	Group.new("MatchParen", nil, c.mono_4)
+	Group.new("MatchParen", c.mono_5, nil)
 	Group.new("NonText", c.mono_1, nil)
 	Group.new("Number", c.orange)
 	Group.new("PreProc", c.yellow)
 	Group.new("Question", c.mono_5, c.mono_2)
-	Group.new("Special", c.mono_4)
+	Group.new("Special", c.cyan, nil, sumStyles({ s.it }))
 	Group.new("SpecialKey", c.pink, nil)
 	Group.new("SpellBad", c.pink)
 	Group.new("SpellCap", c.mono_5)
