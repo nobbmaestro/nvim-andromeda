@@ -40,7 +40,8 @@ function M.setup(opts)
 	Group.new("Search", c.mono_1, c.blue)
 	Group.new("IncSearch", c.mono_1, c.orange)
 
-	Group.new("Visual", nil, c.mono_1)
+    -- Visual
+	Group.new("Visual", nil, c.mono_2)
 	Group.new("VisualMode", g.Visual, g.Visual)
 	Group.new("VisualLineMode", g.Visual, g.Visual)
 
