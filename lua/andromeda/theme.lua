@@ -31,7 +31,7 @@ function M.setup(opts)
 	Group.new("Cursor", nil)
 	Group.new("CursorColumn", nil, c.mono_1)
 	Group.new("CursorLine", nil, c.mono_1)
-	Group.new("CursorLineNr", c.cyan, c.mono_1, sumStyles({ s.it, s.bo }))
+	Group.new("CursorLineNr", c.mono_5, c.mono_1)
 
 	-- Files
 	Group.new("Directory", c.primary)
