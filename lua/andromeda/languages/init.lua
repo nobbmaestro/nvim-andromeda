@@ -7,6 +7,7 @@ function M.setup(opts)
 	require("andromeda.languages.c").setup(opts)
 	require("andromeda.languages.css")
 	require("andromeda.languages.html")
+	require("andromeda.languages.js").setup(opts)
 	require("andromeda.languages.python")
 end
 
