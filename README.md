@@ -14,7 +14,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 [![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
 [![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda/development)](github-last-commit)
-[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.5.0/development)](githut-commits-since)
+[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.6.0/development)](githut-commits-since)
 
 ## Table of Content
 
@@ -100,8 +100,9 @@ require("andromeda").setup({
         mono_1     = "#2f323c", -- secondary background and/or highlighting
         mono_2     = "#3a3e4b", -- used for highlighting
         mono_3     = "#464959", -- used for highlighting
-        mono_4     = "#a0a1a7", -- comments
-        mono_5     = "#d5ced9", -- normal text
+        mono_4     = "#606064",
+        mono_5     = "#a0a1a7", -- comments
+        mono_6     = "#d5ced9", -- normal text
     }
 })
 ```
