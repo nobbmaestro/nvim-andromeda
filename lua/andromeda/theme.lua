@@ -170,6 +170,7 @@ function M.setup(opts)
 
 	Group.new("DiffText", c.mono_4, c.mono_1)
 	Group.new("GitBlameMsg", g.DiffText, g.DiffText)
+	Group.new("GitSignsCurrentLineBlame", g.DiffText, g.DiffText)
 end
 
 return M
