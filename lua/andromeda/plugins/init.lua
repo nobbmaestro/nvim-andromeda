@@ -13,6 +13,7 @@ function M.setup(opts)
 	require("andromeda.plugins.rainbow-delimiters")
 	require("andromeda.plugins.signify")
 	require("andromeda.plugins.telescope")
+    require("andromeda.plugins.indent-blankline")
 end
 
 return M

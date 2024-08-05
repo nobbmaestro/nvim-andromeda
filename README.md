@@ -1,4 +1,4 @@
-Oh, are you also in looking for neovim port of [Andromeda Theme for VS Code](https://github.com/EliverLara/Andromeda/tree/master)? Well, look no further!
+Oh, are you also in pursuit of Neovim port of [Andromeda Theme for VS Code](https://github.com/EliverLara/Andromeda/tree/master)? Well, look no further!
 
 <p align="center">
 <img src="https://media.giphy.com/media/sp685iuIEGuys/giphy.gif" alt="cheers.gif"/>
@@ -14,7 +14,7 @@ Built on [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and [col
 
 [![GitHub Release](https://img.shields.io/github/v/release/nobbmaestro/nvim-andromeda)](github-release)
 [![GitHub last commit](https://img.shields.io/github/last-commit/nobbmaestro/nvim-andromeda/development)](github-last-commit)
-[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.6.0/development)](githut-commits-since)
+[![GitHub commits since](https://img.shields.io/github/commits-since/nobbmaestro/nvim-andromeda/v0.7.0/development)](githut-commits-since)
 
 ## Table of Content
 
