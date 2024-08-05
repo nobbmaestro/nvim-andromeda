@@ -1,4 +1,4 @@
-Oh, are you also in looking for neovim port of [Andromeda Theme for VS Code](https://github.com/EliverLara/Andromeda/tree/master)? Well, look no further!
+Oh, are you also in pursuit of Neovim port of [Andromeda Theme for VS Code](https://github.com/EliverLara/Andromeda/tree/master)? Well, look no further!
 
 <p align="center">
 <img src="https://media.giphy.com/media/sp685iuIEGuys/giphy.gif" alt="cheers.gif"/>
