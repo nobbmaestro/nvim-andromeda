@@ -40,7 +40,7 @@ function M.setup(opts)
 	Group.new("Search", c.mono_1, c.blue)
 	Group.new("IncSearch", c.mono_1, c.orange)
 
-    -- Visual
+	-- Visual
 	Group.new("Visual", nil, c.mono_2)
 	Group.new("VisualMode", g.Visual, g.Visual)
 	Group.new("VisualLineMode", g.Visual, g.Visual)
@@ -58,8 +58,9 @@ function M.setup(opts)
 	Group.new("TabLineSel", c.mono_6, nil)
 
 	-- StatusLine
-	Group.new("StatusLine", c.mono_3, c.mono_2)
-	Group.new("StatusLineNC", c.mono_3, c.mono_2)
+	-- Disabled due to: https://github.com/vim/vim/issues/13366#issuecomment-1790617530
+	-- Group.new("StatusLine", c.mono_3, c.mono_2)
+	-- Group.new("StatusLineNC", c.mono_3, c.mono_2)
 
 	-- Standard Syntax
 	Group.new("Boolean", c.red)
